@@ -82,7 +82,7 @@ export default class App extends React.Component{
                   }
                 >
                   <Tween
-                    from={{marginLeft: '-40px'}}
+                    from={{marginLeft: '-10px'}}
                     to={{marginLeft: '-10px',}}
                   />
                   <Tween/>
