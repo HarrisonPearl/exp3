@@ -65,8 +65,12 @@
 
   color: white;
   white-space: nowrap;
+  text-decoration: none;
 
   z-index: 0;
+}
+.name:hover{
+  opacity: 0.9;
 }
 
 .phone{
@@ -114,19 +118,27 @@
 	transform: rotate(135deg);
   height: 50px;
 	width: 50px;
-  animation: blink infinite 2s linear alternate;
+  animation: blink infinite 1s linear alternate;
 
+}
+.more:hover{
+  color: black;
+  -webkit-animation: 0;
+  opacity: 0.7;
 }
 
 
 
 .containerHorizontal{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
-  z-index: 0;
-  position: relative;
-  height: 50vh;
-  width: 100vw;
-  background-color: red;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
 }
 
 .ballWrapper{
@@ -136,7 +148,8 @@
 }
 .ball{
   animation: App-logo-spin infinite 5s linear;
-  background-color: white;
+
+  background: linear-gradient(rgba(255,255,255,0.1), white);
   border-style: solid;
   border-color: black;
   border-width: 3px;
@@ -148,9 +161,10 @@
 }
 
 
+
 .about{
   position: relative;
-  width: 100vw;
+  width: 98vw;
   height: 350px;
   background-color: white;
   box-shadow: 0px 0px 3vmin rgba(0,0,0,0.1);
@@ -176,14 +190,46 @@
 }
 
 .aboutText{
-  margin-top: 15px;
   margin-left: 4vw;
   margin-right: 4vw;
 
-  font-size: 25px;
+  font-size: 1.8vw;
   font-weight: 400;
   color: black;
 }
+
+.face {
+  position: relative;
+  display: block;
+  width: 500px;
+  height: 250px;
+  margin-right: 4vw;
+  border-radius: 10px;
+  background: url('/face.jpg')
+              no-repeat
+              center center/cover;
+}
+
+.face:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5%;
+  z-index: -1;
+  border-radius: 10px;
+  background: url('/face.jpg')
+              no-repeat
+              center center/cover;
+  filter: blur(10px);
+}
+.vr{
+  margin-top: 10px;
+  margin-right: 7.5vw;
+  width: 250px;
+  height: 100px;
+}
+
 
 header{
   scroll-behavior: smooth;

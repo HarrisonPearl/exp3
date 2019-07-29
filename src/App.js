@@ -21,7 +21,7 @@ export default class App extends React.Component{
       <div className="App">
         <header className="App-header">
           <Controller>
-            <div className="name">Harrison Pearl</div>
+            <a className="name" href="https://www.linkedin.com/in/harrisonpearl/">Harrison Pearl</a>
             <a className='phone' href="tel:1-207-232-2882">207.232.2882</a>
             <a className='email' href="mailto:hspearl@gmail.com">hspearl@gmail.com</a>
             <Link
@@ -80,13 +80,16 @@ export default class App extends React.Component{
                   target={
                     <div id="section1" className="about">
                       <div className="aboutHeader">About Me</div>
-                      <div className="aboutText">
-                      I'm a fourth year studying computer science at Northwestern University.
-                      I love working with emerging technologies, and finding new use cases
-                      for interesting hardware. <br/><br/> My research is focused on developing VR, AR,
-                      Web, and Voice-Based applications that extend user capabiliteis and productivity.
+                      <div className="containerHorizontal">
+                        <div className="aboutText">
+                        I'm a fourth year studying computer science at Northwestern University.
+                        I love working with emerging technologies, and finding new use cases
+                        for interesting hardware. <br/><br/> My research is focused on developing VR, AR,
+                        Web, and Voice-Based applications that extend user capabiliteis and productivity.
 
-                      I'm always excited for a new opertunity to be creative, and to take a project from design to implmentation.
+                        I'm always excited for a new opertunity to be creative, and to take a project from design to implmentation.
+                        </div>
+                        <div className="face" />
                       </div>
                     </div>
                   }
@@ -108,14 +111,17 @@ export default class App extends React.Component{
                   position={1}
                   target={
                     <div className="about">
-                      <div className="aboutHeader">More Stuff</div>
-                      <div className="aboutText">
-                      I'm a fourth year studying computer science at Northwestern University.
-                      I love working with emerging technologies, and finding new use cases
-                      for interesting hardware. <br/><br/> My research is focused on developing VR, AR,
-                      Web, and Voice-Based applications that extend user capabiliteis and productivity.
+                      <div className="aboutHeader">Research</div>
+                      <div className="containerHorizontal">
+                        <div className="aboutText">
+                        <br/><br/> I'm a fourth year studying computer science at Northwestern University.
+                        I love working with emerging technologies, and finding new use cases
+                        for interesting hardware. <br/><br/> My research is focused on developing VR, AR,
+                        Web, and Voice-Based applications that extend user capabiliteis and productivity.
 
-                      I'm always excited for a new opertunity to be creative, and to take a project from design to implmentation.
+                        I'm always excited for a new opertunity to be creative, and to take a project from design to implmentation.
+                        </div>
+                        <img src="vr.png" className="vr"/>
                       </div>
                     </div>
                   }
