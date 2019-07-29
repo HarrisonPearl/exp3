@@ -222,6 +222,7 @@
               no-repeat
               center center/cover;
   filter: blur(10px);
+  -webkit-filter: blur(10px);
 }
 .vr{
   margin-top: 10px;

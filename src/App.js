@@ -21,7 +21,7 @@ export default class App extends React.Component{
       <div className="App">
         <header className="App-header">
           <Controller>
-            <a className="name" href="https://www.linkedin.com/in/harrisonpearl/">Harrison Pearl</a>
+            <a className="name" href="https://www.linkedin.com/in/harrisonpearl/">Harrison Pearl.</a>
             <a className='phone' href="tel:1-207-232-2882">207.232.2882</a>
             <a className='email' href="mailto:hspearl@gmail.com">hspearl@gmail.com</a>
             <Link
