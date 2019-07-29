@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
+import { Link } from 'react-scroll'
 
 export default class App extends React.Component{
   vh(v) {
@@ -23,10 +24,19 @@ export default class App extends React.Component{
             <div className="name">Harrison Pearl</div>
             <a className='phone' href="tel:1-207-232-2882">207.232.2882</a>
             <a className='email' href="mailto:hspearl@gmail.com">hspearl@gmail.com</a>
-            <div className="more"></div>
+            <Link
+                className="more"
+                activeClass="active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={-300}
+                duration= {1000}
+                isDynamic={true}
+            ></Link>
             <Scene
               triggerHook= '0.01'
-              duration= '550'
+              duration= '80%'
               offset="-160"
             >
                 <Timeline>
@@ -40,7 +50,7 @@ export default class App extends React.Component{
                   >
                     <Tween
                       from={{scale:0.2, color: 'black'}}
-                      to={{scale:1,left: '68px', top:'165px'}}
+                      to={{scale:1,left: '75px', top:'168px'}}
                     />
                     <Tween
                       to={{left: '600px'}}
@@ -68,7 +78,7 @@ export default class App extends React.Component{
                 <Timeline
                   position={1}
                   target={
-                    <div className="about">
+                    <div id="section1" className="about">
                       <div className="aboutHeader">About Me</div>
                       <div className="aboutText">
                       I'm a fourth year studying computer science at Northwestern University.
