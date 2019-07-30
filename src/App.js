@@ -39,7 +39,7 @@ export default class App extends React.Component{
 
               triggerHook= '0.01'
               duration= '99%'
-              offset="-275"
+              offset={-this.vh(48)}
             >
                 <Timeline>
                   <Timeline
@@ -104,7 +104,7 @@ export default class App extends React.Component{
             <Scene
               triggerHook= {0.01}
               duration= '100'
-              offset="-750"
+              offset={-this.vh(95)}
             >
                 <Timeline
                   position={1}
@@ -135,7 +135,7 @@ export default class App extends React.Component{
 
               triggerHook= {0.01}
               duration= '100'
-              offset="-750"
+              offset={-this.vh(95)}
             >
                 <Timeline
                   position={1}
