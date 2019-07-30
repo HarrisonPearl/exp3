@@ -72,6 +72,22 @@
 .name:hover{
   opacity: 0.9;
 }
+.nameMobile{
+  position: fixed;
+  top: 20px; left: 65px;
+  font-size: 80px;
+  letter-spacing: 6px;
+  font-weight: 700;
+
+  color: white;
+  white-space: nowrap;
+  text-decoration: none;
+
+  z-index: 0;
+}
+.nameMobile:hover{
+  opacity: 0.9;
+}
 
 .phone{
   position: fixed;
@@ -87,6 +103,23 @@
   z-index: 0;
 }
 .phone:hover{
+  animation: tilt 1 0.2s linear;
+  animation-fill-mode: forwards;
+}
+.phoneMobile{
+  position: fixed;
+  bottom: 260px; left: 65px;
+  font-size: 45px;
+  letter-spacing: 6px;
+  font-weight: 700;
+  text-decoration: none;
+
+  color: white;
+  white-space: nowrap;
+
+  z-index: 0;
+}
+.phoneMobile:hover{
   animation: tilt 1 0.2s linear;
   animation-fill-mode: forwards;
 }
@@ -108,6 +141,25 @@
   animation-fill-mode: forwards;
 
 }
+
+.emailMobile{
+  position: fixed;
+  bottom: 150px; left: 65px;
+  font-size: 45px;
+  letter-spacing: 6px;
+  font-weight: 700;
+  text-decoration: none;
+
+  color: white;
+  white-space: nowrap;
+
+  z-index: 0;
+}
+.emailMobile:hover{
+  animation: tilt 1 0.2s linear;
+  animation-fill-mode: forwards;
+}
+
 .more{
   position: fixed;
   bottom: 40px; left: 85px;
@@ -147,6 +199,26 @@
   z-index: 2;
 }
 .ball{
+  animation: App-logo-spin infinite 5s linear;
+
+  background: linear-gradient(rgba(255,255,255,0.1), white);
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  transform: scale(0.2);
+
+}
+
+
+.ballWrapperMobile{
+  position: fixed;
+  top: 59px; left: 632px;
+  z-index: 2;
+}
+.ballMobile{
   animation: App-logo-spin infinite 5s linear;
 
   background: linear-gradient(rgba(255,255,255,0.1), white);
