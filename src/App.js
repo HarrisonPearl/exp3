@@ -39,7 +39,7 @@ export default class App extends React.Component{
 
   render() {
     const { width } = this.state;
-    const isMobile = width <= 1000;
+    const isMobile = width <= 970;
     // the rest is the same...
 
     if (isMobile) {
@@ -113,7 +113,7 @@ export default class App extends React.Component{
 
                             I'm always excited for a new opertunity to be creative, and to take a project from design to implmentation.
                             </div>
-                            <div className="face" />
+                            <img src="face.jpg" className="faceMobile"/>
                           </div>
                         </div>
                       }
@@ -259,7 +259,7 @@ export default class App extends React.Component{
 
                             I'm always excited for a new opertunity to be creative, and to take a project from design to implmentation.
                             </div>
-                            <div className="face" />
+                            <img src="face.jpg" className="face"/>
                           </div>
                         </div>
                       }
