@@ -51,12 +51,12 @@ export default class App extends React.Component{
                 <a className='phoneMobile' href="tel:1-207-232-2882">207.232.2882</a>
                 <a className='emailMobile' href="mailto:hspearl@gmail.com">hspearl@gmail.com</a>
                 <Link
-                    className="more"
+                    className="moreMobile"
                     activeClass="active"
                     to="section1"
                     spy={true}
                     smooth={true}
-                    offset={-300}
+                    offset={-200}
                     duration= {1000}
                     isDynamic={true}
                 ></Link>
@@ -76,14 +76,14 @@ export default class App extends React.Component{
                         }
                       >
                         <Tween
-                          from={{scale:0.2, color: 'black'}}
-                          to={{scale:1,left: '600px', top:'168px'}}
+                          from={{scale:0.08, color: 'black'}}
+                          to={{scale:1,left: '280px', top:'100px'}}
                         />
                       </Timeline>
                       <Timeline
                         position={1}
                         target={
-                          <div className="info">Software Developer</div>
+                          <div className="infoMobile">Software Developer</div>
                         }
                       >
                         <Tween
@@ -105,7 +105,7 @@ export default class App extends React.Component{
                         <div id="section1" className="about">
                           <div className="aboutHeader">About Me</div>
                           <div className="containerHorizontal">
-                            <div className="aboutText">
+                            <div className="aboutTextMobile">
                             I'm a fourth year studying computer science at Northwestern University.
                             I love working with emerging technologies, and finding new use cases
                             for interesting hardware. <br/><br/> My research is focused on developing VR, AR,
@@ -137,7 +137,7 @@ export default class App extends React.Component{
                         <div className="about">
                           <div className="aboutHeader">Research</div>
                           <div className="containerHorizontal">
-                            <div className="aboutText">
+                            <div className="aboutTextMobile">
                             <br/><br/> I'm a fourth year studying computer science at Northwestern University.
                             I love working with emerging technologies, and finding new use cases
                             for interesting hardware. <br/><br/> My research is focused on developing VR, AR,
@@ -167,7 +167,7 @@ export default class App extends React.Component{
                       target={
                         <div className="about">
                           <div className="aboutHeader">Even More Stuff</div>
-                          <div className="aboutText">
+                          <div className="aboutTextMobile">
                           I'm a fourth year studying computer science at Northwestern University.
                           I love working with emerging technologies, and finding new use cases
                           for interesting hardware. <br/><br/> My research is focused on developing VR, AR,
