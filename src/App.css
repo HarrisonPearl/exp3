@@ -265,6 +265,6 @@ Timeline{
   }
   to {
     opacity: 0.8;
-    transform: rotate(1deg);
+    transform: rotate(0.5deg);
   }
 }

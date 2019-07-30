@@ -17,6 +17,7 @@ export default class App extends React.Component{
   }
 
   render(){
+
     return (
       <div className="App">
         <header className="App-header">
@@ -35,9 +36,10 @@ export default class App extends React.Component{
                 isDynamic={true}
             ></Link>
             <Scene
+
               triggerHook= '0.01'
-              duration= '80%'
-              offset="-160"
+              duration= '99%'
+              offset="-275"
             >
                 <Timeline>
                   <Timeline
@@ -50,14 +52,11 @@ export default class App extends React.Component{
                   >
                     <Tween
                       from={{scale:0.2, color: 'black'}}
-                      to={{scale:1,left: '75px', top:'168px'}}
-                    />
-                    <Tween
-                      to={{left: '600px'}}
+                      to={{scale:1,left: '600px', top:'168px'}}
                     />
                   </Timeline>
                   <Timeline
-                    position={2}
+                    position={1}
                     target={
                       <div className="info">Software Developer</div>
                     }
